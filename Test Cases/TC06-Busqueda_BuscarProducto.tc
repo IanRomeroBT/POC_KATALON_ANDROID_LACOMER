@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06-Busqueda_BuscarProducto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2954824f-880a-443b-9acf-484aeec26af2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>535d66f8-05b4-462b-b04a-7f333a08f7da</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Jabon'</defaultValue>
+      <description></description>
+      <id>535d66f8-05b4-462b-b04a-7f333a08f7da</id>
+      <masked>false</masked>
+      <name>nombreProducto</name>
+   </variable>
+</TestCaseEntity>

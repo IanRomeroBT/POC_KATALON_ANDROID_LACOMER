@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03-Productos_AgregarCarritoVistaDetallada</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9fd11518-32f0-4932-b546-e495fe53b9cc</testCaseGuid>
+</TestCaseEntity>
