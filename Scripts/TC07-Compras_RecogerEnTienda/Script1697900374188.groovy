@@ -17,9 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.pressBack()
+
+WebUI.callTestCase(findTestCase('TC04-Carrito_ConsultarCarrito'), [:], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.TextView - Comprar'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - NO'), 0)
+Mobile.tap(findTestObject('Object Repository/Globales/Alertas/android.widget.Button - NO'), 0)
 
 Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.TextView - EnTienda'), 0)
 
@@ -31,14 +35,14 @@ Mobile.delay(5)
 
 Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.TextView - Siguiente'), 0)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/android.widget.Button - CONTINUAR'), 60)
+Mobile.waitForElementPresent(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.Button - CONTINUAR'), 60)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - CONTINUAR'), 0)
+Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.Button - CONTINUAR'), 0)
 
 Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.FrameLayout'), 0)
 
 Mobile.tap(findTestObject('Object Repository/PROCESO_COMPRA/android.widget.TextView - AgregarTarjeta'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - ACEPTAR'), 0)
+Mobile.tap(findTestObject('Object Repository/Globales/Alertas/android.widget.Button - ACEPTAR'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.Button - CANCELAR'), 0)
+Mobile.tap(findTestObject('Object Repository/Globales/Alertas/android.widget.Button - CANCELAR'), 0)

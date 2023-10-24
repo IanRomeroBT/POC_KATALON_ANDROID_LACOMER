@@ -17,4 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.tap(findTestObject('GLOBALES/android.widget.ImageView - Carrito'), 0)
+Mobile.tap(findTestObject('CARRITO/android.widget.ImageView - Carrito'), 0)

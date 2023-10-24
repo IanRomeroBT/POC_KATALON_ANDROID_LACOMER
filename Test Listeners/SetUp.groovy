@@ -53,8 +53,17 @@ class SetUp {
 		
 		Mobile.takeScreenshot()
 		
-		Mobile.waitForElementPresent(findTestObject('Object Repository/GLOBALES/Menu/android.widget.TextView - Departamentos'),
-				60)
+		def flagResetTc = Mobile.waitForElementPresent(findTestObject('Object Repository/CARRITO/android.widget.ImageView - Carrito'),
+				1, FailureHandling.OPTIONAL)
+		
+		if(flagResetTc == false) {
+			Mobile.pressBack()
+			
+			if(Mobile.verifyElementVisible(findTestObject('Object Repository/GLOBALES/Alertas/android.widget.Button - No'), 3, FailureHandling.OPTIONAL)) {
+				Mobile.tap(findTestObject('Object Repository/GLOBALES/Alertas/android.widget.Button - No'), 0)
+			}
+		}
+		
 		Mobile.tap(findTestObject('Object Repository/GLOBALES/Menu/android.widget.TextView - Departamentos'), 0)
 	}
 
